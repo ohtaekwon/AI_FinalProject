@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
+
+<!------------- 쇼핑몰 haed 시작(css, js, 외부jquery link, favicon 등)  -------------->
 <head>
 	<meta charset="UTF-8">
 	
@@ -26,42 +28,50 @@
 	 <meta name="msapplication-TileColor" content="#ffffff">
 	 <meta name="msapplication-TileImage" content="image/favicon/ms-icon-144x144.png">
 	 <meta name="theme-color" content="#ffffff">
+	 	 
 	
-	<!-- JQUERY 순서 : JQUERY다음 CDN-->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<!-- swiper -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-	 
 	<title>온라인 쇼핑몰 - 쇼팅</title>
+<!--------------외부 css/js ------------------->
+
+  	<!-- JQUERY 순서 : JQUERY다음 CDN-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
 	
-	<!-- 쇼핑몰 CSS -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/swiper.css">
-	
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/swiper.js"></script>
-	
+	<!-- swiper -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-	<script type="text/javascript" src="js/swiper.js"></script>
+	
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	
+	<!-- bxslider -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">  -->
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+  	
+
+	<!-- fontawesome -->
+<!--<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> -->	
+	
+<!--------------내부 css/js ------------------->	
+  	<!-- 쇼핑몰 CSS -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/bxslider.css">
+	
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	
+  	<!-- 쇼핑몰 JS -->
+	<script src="js/bxslide.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/ie-checker.js"></script>
 	
 
-	<!--[If IE 7]>
-	    <script type="text/javascript">
-	        alert("Please Upgrade Your BROWSER !");
-	    </script>
-	<![endif]-->
 
-	<!--[if lt IE 9]>
-	    <script src="js/html5shiv.min.js"></script>
-	<![endif]-->
-
-	<!-- script -->
-	<script src="js/ie-checker.js"></script>
 </head>
+<!------------------------------ 쇼핑몰 body 시작 ------------------------------>
 <body>
 	<div id="wrap">
 	<!-- 첫 번째 구역 -->
@@ -87,6 +97,9 @@
 		
 		<div id="banner">
 			<div class="container">
+				<div class="main_add_swiper">
+					<img src="img/add_banner.png" alt="">
+				</div>
 				<div class="ban_right">
 					<div class="br_tit">
 						<h3>북나잇<br> 책과 나를 IT다</h3>
@@ -113,7 +126,7 @@
 		<!-- 세 번째 구역 --->
 		<div id="contents">
 			<div id="cont1">
-				<div class="container">
+				<div class="container" >
 					<nav id="nav">
 						<ul class="gnb">
 							<li><a href="#">도서장르</a></li>
@@ -151,8 +164,8 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="img/Book_03.jpg" alt="카드03">
-											<em>HTML5 웹 프로그래밍 입문</em>
+											<img src="img/Book_01.jpg" alt="카드03">
+											<em>이것이 자바다</em>
 										</a>
 									</li>
 								</ul>
@@ -170,7 +183,7 @@
 						<div class="card_desc">
 							<dl>
 								<dt>원하는 책 365 언제나!</dt>
-								<dd class="cd1">키워드 Pick,<br>Book me up! (배경 설정 해야함)</dd>
+								<dd class="cd1">키워드 Pick,<br>원하는 책 365 언제나!</dd>
 								<dd class="cd2">
 									<ul>
 										<li><a href="#">#인문교양서</a></li>
@@ -226,8 +239,8 @@
 					    <div class="event_box3">
 					        <h4>쇼팅이 선정하는 BEST!</h4>
 					        <div class="eb_slider2">
-					            <img src="img/bw.jpg" alt="나만의 혜택 이미지1">
-					            <p>쇼팅이 선정하는 책을 <br>확인해보세요</p>
+					            <img src="img/recoman_01.png" alt="나만의 혜택 이미지1">
+					            <p>쇼팅이 선정하는 책을 확인해보세요</p>
 					            <a href="#">자세히보기</a>
 					        </div>
 					    </div>    
@@ -243,10 +256,10 @@
                         <h3><em>나에게 맞는 책</em>Shotting</h3>
                         <div class="life_menu">
                             <ul>
-                                <li><a href="../html/Product.html">도서</a></li>
-                                <li><a href="#">추천</a></li>
-                                <li><a href="#">ㅇ</a></li>
-                                <li><a href="#">ㅇㅇ</a></li>
+                                <li><a href="../html/Product.html">#주식</a></li>
+                                <li><a href="#">#코인</a></li>
+                                <li><a href="#">#부동산</a></li>
+                                <li><a href="#">#IT</a></li>
                             </ul>
                         </div>
                         <div class="life_btn">
@@ -261,55 +274,202 @@
                         </div>
                     </div>
                     </div>
-                    </div>                                
+                    </div>     
+            </div>
+                                       
+		<div style="text-align:center; margin-top:5px;">여기는 경계선</div>
 
 		<!-- //cont2 -->
 		<!-- cont3 -->
 		<div id="cont3">
 			<div class="container">
-			  <h2><a href="#" onclick=";">베스트 셀러<em class="bestitem"></em></a></h2><br>
-				 <div class="swiper-container" id="BestSeller_Area">
+			  <h2><a href="#" onclick=";">베스트 셀러<em class="bestitem"></em></a></h2><br>			 
+				 <div class="swiper-container" id="book-container">
 				    <div class="swiper-wrapper">
-				      <div class="swiper-slide" id="slide01">
-				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy">Slide 1
-				       <ul class="slidelist">
-				        <li>
-				         <p class="book_best_img">
-				        	<span class="img"><a href="#" onclick=";"></a></span>
-				         </p>
-						</li>
-					  </ul>
-				         <div class="book_info">        
-				         	<p class="books_info_1">책정보1</p>
-				            <p class="books_name">책이름</p>
-				            <p class="books_info_2">책정보2</p>
-				            <p class="books_price">책가격</p>
-				         </div>
-		      		</div>
-
-				      <div class="swiper-slide">
-				       <ul class="slidelist">
-				       <li>
-				         <p class="book_best_img">
-				         <span class="img"><a href="#" onclick=";"></a></span>
-				         <div class="book_info">        
-				         	<p class="books_info_1">책정보1</p>
-				            <p class="books_name">책이름</p>
-				            <p class="books_info_2">책정보2</p>
-				            <p class="books_price">책가격</p>
-				         </div>
-				       </li>
-				       </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
 				      </div>
-				      <div class="swiper-slide">Slide 3</div>
-				      <div class="swiper-slide">Slide 4</div>
-				      <div class="swiper-slide">Slide 5</div>
-				      <div class="swiper-slide">Slide 6</div>
-				      <div class="swiper-slide">Slide 7</div>
-				      <div class="swiper-slide">Slide 8</div>
-				      <div class="swiper-slide">Slide 9</div>
-				      <div class="swiper-slide">Slide 10</div>
+				     </div>
 				    </div>
+				      <div class="book_details">
+				      <h4>책 제목 : 이것이 자바다</h4>
+				      <p>부가설명 : 출판사, </p><br>
+				      <p>가격</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리2</h4>
+				      <p>여기는 책 부가적 설명임</p><br>
+				      <p>책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>				   
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리3</h4>
+				      <p>여기는 책 부가적 설명임</p><br>
+				      <p>책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>				     
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리4</h4>
+				      <p>여기는 책 부가적 설명임</p><br>
+				      <p>책부가설명</p>				      
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리5</h4>
+				      <p>여기는 책 부가적 설명임 책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리6</h4>
+				      <p>여기는 책 부가적 설명임 책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리7</h4>
+				      <p>여기는 책 부가적 설명임 책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리8</h4>
+				      <p>여기는 책 부가적 설명임 책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리9</h4>
+				      <p>여기는 책 부가적 설명임 책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>
+				      <ul class="swiper-slide" id="book_slide">
+				      <li>
+				      <div class="book_img">
+				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy" alt="">
+				      <div class="rank">
+				      	<span>1</span>
+				      <div class="hover_contests">
+				      	<span><i class="fas fa-search-plus"></i></span>
+				      </div>
+				     </div>
+				    </div>
+				      <div class="book_details">
+				      <h4>여기는 책 제목자리10</h4>
+				      <p>여기는 책 부가적 설명임 책부가설명</p>
+				      <a href="">자세히보기<span><i class="fas fa-caret-right"></i></span></a>
+				     </div>
+				    </li>
+				   </ul>				   				   				   				   				   				   			      
 				    <!-- Add Arrows -->
 				    <div class="swiper-button-next"></div>
 				    <div class="swiper-button-prev"></div>
@@ -317,169 +477,194 @@
 				 </div>
 				</div>
 			</div>
+		
+		
+		<div style="text-align:center; margin-top:10px;">여기는 경계선</div>
 		<div id="cont4">
-			<div class="container">
-			  <h2><a href="#" onclick=";">오늘의 추천<em class="bestitem"></em></a></h2><br>
-				 <div class="swiper-container" id="BestSeller_Area">
-				    <div class="swiper-wrapper">
-				      <div class="swiper-slide" id="slide01">
-				      <img src="img/BestSeller/Book_01_Best.jpg" class="swiper-lazy">Slide 1
-				       <ul class="slidelist">
-				        <li>
-				        <a>
-				        </a>
-				         <p class="book_best_img">
-				        	<span class="img"><a href="#" onclick=";"></a>
-				         	</span>
-				         </p>
-						</li>
-					  </ul>
-				         <div class="book_info">        
-				         	<p class="books_info_1">책정보1</p>
-				            <p class="books_name">책이름</p>
-				            <p class="books_info_2">책정보2</p>
-				            <p class="books_price">책가격</p>
-				         </div>
-		      		</div>
-
-	
-				      <div class="swiper-slide">Slide 2</div>
-				      <div class="swiper-slide">Slide 3</div>
-				      <div class="swiper-slide">Slide 4</div>
-				      <div class="swiper-slide">Slide 5</div>
-				      <div class="swiper-slide">Slide 6</div>
-				      <div class="swiper-slide">Slide 7</div>
-				      <div class="swiper-slide">Slide 8</div>
-				      <div class="swiper-slide">Slide 9</div>
-				      <div class="swiper-slide">Slide 10</div>
-				    </div>
-				    <!-- Add Arrows -->
-				    <div class="swiper-button-next"></div>
-				    <div class="swiper-button-prev"></div>
-				  </div>
-				  </div>
-			<div id="cont5">
-				<div class="container">
-					<div class="swiper-container">
-					    <div class="swiper-wrapper">
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					    </div>
-					    <div class="swiper-button-next"></div>
-					    <div class="swiper-button-prev"></div>
-					</div>				
+		 <div class="container">
+			<div id="book-container"> 
+				<div class="book_conts_inner"> 
+					<h2>베스트 셀러</h2> 
+						<div id="conts_list"> 
+							<ul class="book_list"> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span> 
+										<dl>
+										 <dt>책 제목 1</dt>
+										 <dd>책 부가적 설명자리.<br>가격 자리.</dd> 
+										</dl> 
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl> 
+										 <dt>책 제목 2</dt> 
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl> 
+								</li> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span> 
+										<dl>
+										 <dt>책 제목 3</dt> 
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd>
+										</dl> 
+								</li> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 4</dt>
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl>
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 5</dt>
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl>
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 6</dt>
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd>
+										</dl>
+								</li> 
+							</ul> 
+						</div>
+					</div> 
 				</div>
-			</div>
-			
-			<div id="cont6">
-				<div class="container">
-				<div class="swiper-container">
-					    <div class="swiper-wrapper">
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					        <div class="swiper-slide">...</div>
-					    </div>
-					    <div class="swiper-button-next"></div>
-					    <div class="swiper-button-prev"></div>
-					</div>
+
+		<!-- //book-container -->
+		</div>
+	</div>
+	<!-- //cont4 -->
+	<div style="text-align:center; margin-top:10px;">여기는 경계선</div>
+		<div id="cont4">
+		 <div class="container">
+			<div id="book-container"> 
+				<div class="book_conts_inner"> 
+					<h2>오늘의 추천</h2> 
+						<div id="conts_list"> 
+							<ul class="book_list"> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span> 
+										<dl>
+										 <dt>책 제목 1</dt>
+										 <dd>책 부가적 설명자리.<br>가격 자리.</dd> 
+										</dl> 
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl> 
+										 <dt>책 제목 2</dt> 
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl> 
+								</li> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span> 
+										<dl>
+										 <dt>책 제목 3</dt> 
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd>
+										</dl> 
+								</li> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 4</dt>
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl>
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 5</dt>
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl>
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 6</dt>
+										 <dd>배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd>
+										</dl>
+								</li> 
+							</ul> 
+						</div>
+					</div> 
 				</div>
-			</div>
-		<!-- //contents -->
+
+		<!-- //book-container -->
+		</div>
+	</div>
+	<div style="text-align:center; margin-top:10px;">여기는 경계선</div>
+		<div id="cont4">
+		 <div class="container">
+			<div id="book-container"> 
+				<div class="book_conts_inner"> 
+					<h2>최신도서</h2> 
+						<div id="conts_list"> 
+							<ul class="book_list"> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span> 
+										<dl>
+										 <dt>책 제목 1</dt>
+										 <dd style="text-align:center;">책 부가적 설명자리.<br>가격 자리.</dd> 
+										</dl> 
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl> 
+										 <dt>책 제목 2</dt> 
+										 <dd style="text-align:center;">배너슬라이드입니다.<br>
+										 설명 및 내용 텍스트.</dd> 
+										</dl> 
+								</li> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span> 
+										<dl>
+										 <dt>책 제목 3</dt> 
+										 <dd style="text-align:center;">배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd>
+										</dl> 
+								</li> 
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 4</dt>
+										 <dd style="text-align:center;">배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl>
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 5</dt>
+										 <dd style="text-align:center;">배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd> 
+										</dl>
+								</li>
+								<li> 
+									<span><img src="img/Booksample.jpg" alt=""></span>
+										<dl>
+										 <dt>책 제목 6</dt>
+										 <dd style="text-align:center;">배너슬라이드입니다.<br>설명 및 내용 텍스트.</dd>
+										</dl>
+								</li> 
+							</ul> 
+						</div>
+					</div> 
+				</div>
+
+		<!-- //book-container -->
+		</div>
+	</div>
+	<!-- //cont4 -->	
 	
 	
-	
-	
-	
-	
-	
-	
-	<!-- 
-	
-					<div class="container">
-					 <div id="app">
-                        <div class="app_left">
-                            <img src="img/mc_service_banner01_img.jpg" alt="하나 1Q페이" style="display: none">
-                            <ul class="al_btn">
-                                <li><a href="#"><img src="img/mc_service_banner01_btn01.jpg" alt="아이콘1"></a></li>
-                                <li><a href="#"><img src="img/mc_service_banner01_btn02.jpg" alt="아이콘2"></a></li>
-                                <li><a href="#"><img src="img/mc_service_banner01_btn03.jpg" alt="아이콘3"></a></li>
-                                <li><a href="#"><img src="img/mc_service_banner01_btn04.jpg" alt="아이콘4"></a></li>
-                            </ul>
-                            <ul class="al_txt">
-                                <li><a href="#"><strong>하나 1Q페이</strong> 지값없이 즐기는 온/오프라인 결제</a></li>
-                                <li style="display: none"><a href="#"><strong>하나카드 App</strong> 주요 서비스를 스마튼폰으로 간편하게 이용</a></li>
-                                <li style="display: none"><a href="#"><strong>하나 멤버스</strong> 다양한 일사 속 혜택</a></li>
-                                <li style="display: none"><a href="#"><strong>USIM Card</strong> 터치 한번으로 편리하게 결제</a></li>
-                            </ul>
-                        </div>
-                        <div class="app_right">
-                            <div class="ap_ban1">공인인증센터</div>
-                            <div class="ap_ban2">E-BOOK</div>
-                            <div class="ap_ban3">
-                                <div class="ban3_text"><h5>금융 소비자 보호</h5>소비자보호정보를 한눈에 금융소비자 보호포털</div>
-                                <div class="ban3_slider">고객응대직원보호</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			</div>
-			</div>
-	 -->
-	
-	
-	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
+		
+	<!-- //contents -->
+ 
+		
 		<!-- 마지막 구역 -->	
 		<div id="footer">
 			<div id="footer_notice">
@@ -537,6 +722,8 @@
 		<!-- //footer -->
 	</div>
 	<!-- //wrap -->
+
+
 </body>
 
 
