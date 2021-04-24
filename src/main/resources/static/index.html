@@ -4,7 +4,6 @@
 <!------------- 쇼핑몰 haed 시작(css, js, 외부jquery link, favicon 등)  -------------->
 <head>
 	<meta charset="UTF-8">
-	
 	 <!-- '반응형 웹'-->
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	 <!-- 익스플로러 최신버전으로 랜더링 -->
@@ -31,10 +30,11 @@
 	 	 
 	
 	<title>온라인 쇼핑몰 - 쇼팅</title>
-<!--------------외부 css/js ------------------->
+<!-- ========================== 외부 css/js ========================== -->
 
   	<!-- JQUERY 순서 : JQUERY다음 CDN-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
 	
 	<!-- swiper -->
@@ -43,16 +43,19 @@
 	
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	
-	<!-- bxslider -->
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">  -->
+	<!-- ============= boxicon ============= -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	
+	<!-- ============= bxslider ============= -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
   	
-
-	<!-- fontawesome -->
+	 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- ============= fontawesome ============= -->
 <!--<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> -->	
 	
-<!--------------내부 css/js ------------------->	
+<!-- ========================== 내부 css/js ========================== -->	
   	<!-- 쇼핑몰 CSS -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -63,7 +66,7 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 
 	
-  	<!-- 쇼핑몰 JS -->
+  	<!-- ============= 쇼핑몰 JS ============= -->
 	<script src="js/bxslide.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/ie-checker.js"></script>
@@ -71,10 +74,10 @@
 
 
 </head>
-<!------------------------------ 쇼핑몰 body 시작 ------------------------------>
+<!-- ========================== 쇼핑몰 body 시작 ========================== -->
 <body>
 	<div id="wrap">
-	<!-- 첫 번째 구역 -->
+	<!-- ========================== 첫 번째 구역 ========================== -->
 		<div id="header">
 			<div class="container">
 				<div class="header">
@@ -85,7 +88,7 @@
 					</ul>
 					<ul class="list2">
 						<li class="log"><a href="#">로그인</a></li>
-						<li><a href="#">회원가입</a></li>
+						<li><a href="./admin/html/admin.html">회원가입</a></li>
 						<li><a href="#">장바구니</a></li>
 						<li><a href="#">고객센터</a></li>
 					</ul>
@@ -93,12 +96,15 @@
 			</div>
 		</div>
 		<!-- //header -->
-		<!-- 두 번째 구역 -->
+		<!-- ========================== 두 번째 구역 ========================== -->
 		
 		<div id="banner">
-			<div class="container">
+			<div class="container" >
+<!--		<div class="main_banner">
+			 <img src=  "../img/main_banner02.png" alt="ad">
+			 </div> -->
 				<div class="main_add_swiper">
-					<img src="img/add_banner.png" alt="">
+					<img src="img/main_banner.png" alt="">
 				</div>
 				<div class="ban_right">
 					<div class="br_tit">
@@ -130,7 +136,7 @@
 					<nav id="nav">
 						<ul class="gnb">
 							<li><a href="#">도서장르</a></li>
-							<li><a href="#">베스트셀러</a></li>
+							<li><a href="#">베스트셀러</a></li>							
 							<li><a href="#">최신 도서</a></li>
 							<li><a href="#">추천 도서</a></li>
 							<li><a href="#">오늘의 책</a></li>
@@ -139,10 +145,14 @@
 						</ul>
 						<ul class="gnb_right">
 							<li class="gr1"><a href="#">간편서비스</a></li>
-							<li class="gr2"><a href="#">전체메뉴 <i class="fa fa-bars" aria-hidden="true"></i></a></li>
+							<li class="gr2"><a href="#">전체메뉴 <i class="fa fa-bars" aria-hidden="true" id="menu_tab"></i></a></li>
 						</ul>
 						<a href="#" class="gnb_search"><span class="ir">통합검색</span><i class="ir">레이어팝업 열림</i></a>
 						<a href="#" class="gnb_event">메뉴 <i class="fa fa-plus" aria-hidden="true"></i></a>
+					
+<!--  				<div id="middle_banner">
+						<div class="visual"><img src="img/middle_banner.png" alt="중간배너"></div>
+					</div>	-->	
 					</nav>
 					<!-- //nav -->
 					<div id="card">
@@ -245,11 +255,11 @@
 					        </div>
 					    </div>    
 					</div>
-					<!-- //event -->
+					<!-- ============= //event ============= -->
 				</div>
 			</div>
-			<!-- //cont1 -->
-			<!-- cont2 -->
+			<!-- ============= //cont1 ============= -->
+			<!-- ============= cont2 ============= -->
 			<div id="cont2">
 				<div class="container">
                     <div id="life">
@@ -484,7 +494,7 @@
 		 <div class="container">
 			<div id="book-container"> 
 				<div class="book_conts_inner"> 
-					<h2>베스트 셀러</h2> 
+					<h2>베스트 셀러 ></h2> 
 						<div id="conts_list"> 
 							<ul class="book_list"> 
 								<li> 
@@ -537,13 +547,13 @@
 		<!-- //book-container -->
 		</div>
 	</div>
-	<!-- //cont4 -->
+	<!-- ============= //cont4 ============= -->
 	<div style="text-align:center; margin-top:10px;">여기는 경계선</div>
 		<div id="cont4">
 		 <div class="container">
 			<div id="book-container"> 
 				<div class="book_conts_inner"> 
-					<h2>오늘의 추천</h2> 
+					<h2>오늘의 추천 ></h2> 
 						<div id="conts_list"> 
 							<ul class="book_list"> 
 								<li> 
@@ -593,7 +603,7 @@
 					</div> 
 				</div>
 
-		<!-- //book-container -->
+		<!-- ============= //book-container ============= -->
 		</div>
 	</div>
 	<div style="text-align:center; margin-top:10px;">여기는 경계선</div>
@@ -601,7 +611,7 @@
 		 <div class="container">
 			<div id="book-container"> 
 				<div class="book_conts_inner"> 
-					<h2>최신도서</h2> 
+					<h2>최신도서 ></h2> 
 						<div id="conts_list"> 
 							<ul class="book_list"> 
 								<li> 
@@ -652,20 +662,20 @@
 					</div> 
 				</div>
 
-		<!-- //book-container -->
+	<!-- ========================== //book-container ========================== -->
 		</div>
 	</div>
-	<!-- //cont4 -->	
+	<!-- ========================== //cont4 ========================== -->	
 	
 	
 
 
 		
 		
-	<!-- //contents -->
+	<!-- ========================== //contents ========================== -->
  
 		
-		<!-- 마지막 구역 -->	
+<!-- ========================== 마지막 구역 ========================== -->	
 		<div id="footer">
 			<div id="footer_notice">
 				<div class="container">
